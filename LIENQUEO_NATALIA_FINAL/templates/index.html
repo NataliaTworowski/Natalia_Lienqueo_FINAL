@@ -1,0 +1,74 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>SEMINARIO GASTRONOMIA</title>
+</head>
+<body class="bg-black">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">SEMINARIO DE GASTRONOMIA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'inscripcion_persona' %}">INSCRIPCION PERSONA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'inscripcion_institucion' %}">INSCRIPCION INSTITUCION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'lista_inscritos' %}">PARTICIPANTES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'lista_instituciones' %}">INSTITUCIONES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'alumno_api' %}">ALUMNO</a>
+                </li>  
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="container mt-5 text-center text-white">
+        <h1 class="display fw-bold fs-1">GRAN SEMINARIO GASTRONOMICO</h1>
+    </div>
+    
+
+    <div class="container text-center mt-5">
+        <div class="row">
+            <div class="col">
+                <img src="{% static 'img/imagen1.jpg' %}" alt="Imagen 1" class="img-fluid rounded-circle">
+            </div>
+            <div class="col">
+                <img src="{% static 'img/imagen2.jpg' %}" alt="Imagen 2" class="img-fluid rounded-circle">
+            </div>
+            <div class="col">
+                <img src="{% static 'img/imagen3.jpg' %}" alt="Imagen 3" class="img-fluid rounded-circle">
+            </div>
+            <div class="col">
+                <img src="{% static 'img/imagen4.jpg' %}"alt="Imagen 4" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-white text-center">
+        
+        <i class="bi bi-calendar-week-fill">Fecha:22/11/2024</i>
+        <i class="bi bi-geo-alt d-block">Ubicación: 4 Oriente #349, Temuco
+        </i> 
+        <i class="bi bi-alarm d-block">Hora:  8:45 am</i> 
+    </div>
+    
+
+    
+
+</body>
+</html>
